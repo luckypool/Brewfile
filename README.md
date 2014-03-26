@@ -51,33 +51,9 @@ $ brew bundle
 
 ## Package list
 
-### by homebrew
+Please choose branch
 
-- git
-- hub
-- jq
-- nkf
-- openssl
-- terminal-notifier
-- tig
-- tmux
-- tree
-- zsh
-- zsh-completions
-
-### by [homebrew-cask](https://github.com/phinze/homebrew-cask)
-
-- android-studio
-- appcleaner
-- bettertouchtool
-- google-chrome
-- iterm2
-- java
-- keyremap4macbook
-- kobito
-- limechat
-- sublime-text
-- virtualbox
-- vagrant
-- xtrafinder
+- [master/Brewfile](https://github.com/luckypool/Brewfile/blob/master/Brewfile)
+- [minimal/Brewfile](https://github.com/luckypool/Brewfile/blob/branch/Brewfile)
+- or edit Brewfile as you like.
 

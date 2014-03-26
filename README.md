@@ -54,7 +54,7 @@ $ brew bundle
 Please choose branch
 
 - [master/Brewfile](https://github.com/luckypool/Brewfile/blob/master/Brewfile)
-- [minimal/Brewfile](https://github.com/luckypool/Brewfile/blob/branch/Brewfile)
+- [minimal/Brewfile](https://github.com/luckypool/Brewfile/blob/minimal/Brewfile)
 - or edit Brewfile as you like.
 
 ex.) If you like minimal Brewfile

@@ -57,3 +57,9 @@ Please choose branch
 - [minimal/Brewfile](https://github.com/luckypool/Brewfile/blob/branch/Brewfile)
 - or edit Brewfile as you like.
 
+ex.) If you like minimal Brewfile
+
+```
+$ git checkout -b minimal origin/minimal
+```
+

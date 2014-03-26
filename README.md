@@ -47,3 +47,35 @@ $ rake brew:bundle
 $ brew bundle
 ```
 
+## package list
+
+### by homebrew
+
+- git
+- hub
+- jq
+- nkf
+- openssl
+- terminal-notifier
+- tig
+- tmux
+- tree
+- zsh
+- zsh-completions
+
+### by [homebrew-cask](https://github.com/phinze/homebrew-cask)
+
+- android-studio
+- appcleaner
+- bettertouchtool
+- google-chrome
+- iterm2
+- java
+- keyremap4macbook
+- kobito
+- limechat
+- sublime-text
+- virtualbox
+- vagrant
+- xtrafinder
+

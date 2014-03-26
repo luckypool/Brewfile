@@ -63,3 +63,22 @@ ex.) If you like minimal Brewfile
 $ git checkout -b minimal origin/minimal
 ```
 
+## Install anyenv
+
+```bash
+$ rake anyenv:setup
+```
+
+## Install plenv, rbenv, ndenv
+
+```bash
+$ rake anyenv:install
+```
+
+will be installed 
+
+- Perl 5.14.4/5.16.3
+  - set 5.14.4 to global
+- Ruby 2.1.0
+- Node.js v0.10.25
+

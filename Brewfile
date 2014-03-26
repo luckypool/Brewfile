@@ -1,5 +1,6 @@
 update
 
+# install emacs
 install git
 install hub
 install jq
@@ -9,6 +10,7 @@ install terminal-notifier
 install tig
 install tmux
 install tree
+install vim
 install zsh
 install zsh-completions
 

@@ -15,6 +15,7 @@ install zsh-completions
 tap phinze/homebrew-cask || true
 install brew-cask
 
+cask install android-studio
 cask install appcleaner
 cask install bettertouchtool
 cask install google-chrome

@@ -3,19 +3,25 @@
 namespace :brew do
   desc 'Setup homebrew'
   task :setup do
-    `ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"`
+    exec_and_puts 'ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"'
   end
 
   desc 'Upgrade'
   task :upgrade do
-    `brew update`
-    `brew upgrade`
-    `brew cleanup`
+    exec_and_puts 'brew update'
+    exec_and_puts 'brew upgrade'
+    exec_and_puts 'brew cleanup'
   end
 
   desc 'Bundle'
   task :bundle do
-    `brew bundle`
+    exec_and_puts'brew bundle'
   end
 end
 
+def exec_and_puts(command)
+  puts "  #{command}"
+  puts ""
+  puts `#{command}`
+  puts ""
+end

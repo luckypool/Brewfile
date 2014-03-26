@@ -18,6 +18,7 @@ install brew-cask
 cask install android-studio
 cask install appcleaner
 cask install bettertouchtool
+cask install genymotion
 cask install google-chrome
 cask install iterm2
 cask install java

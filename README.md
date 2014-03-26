@@ -9,7 +9,7 @@ Bacis Brewfile
 
 https://developer.apple.com/register/index.action
 
-### Install Xcode (Cmmand Line Tools)
+### Install Xcode (Command Line Tools)
 
 Install from App Store
 

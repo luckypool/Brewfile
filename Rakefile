@@ -1,4 +1,5 @@
 #!/usr/bin/env rake
+require "open3"
 
 namespace :brew do
   desc 'Setup homebrew'
@@ -68,6 +69,6 @@ end
 def exec_and_puts(command)
   puts "  #{command}"
   puts ""
-  puts `#{command}`
+  Open3.pipeline command
   puts ""
 end

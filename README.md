@@ -19,7 +19,7 @@ Install Command Line Tools
 
 - by CUI (open Terminal.app and do following command)
 
-```
+```bash
 $ xcode-select --install
 ```
 
@@ -31,7 +31,7 @@ open Xcode.app > Open Developer tool > More Developer tool
 
 ## Setup Homebrew
 
-```
+```bash
 $ git clone https://github.com/luckypool/Brewfile.git
 $ cd Brewfile
 $ rake brew:setup
@@ -39,15 +39,17 @@ $ rake brew:setup
 
 Then, install homebrew
 
-## Install 
+## Install by Brewfile
 
-```
+```bash
 $ rake brew:bundle
+
 # or
+
 $ brew bundle
 ```
 
-## package list
+## Package list
 
 ### by homebrew
 

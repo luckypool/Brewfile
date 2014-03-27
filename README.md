@@ -39,7 +39,7 @@ $ rake brew:setup
 
 Then, install homebrew
 
-## Install by Brewfile
+## Install packages by Brewfile
 
 ```bash
 $ rake brew:bundle
@@ -49,7 +49,7 @@ $ rake brew:bundle
 $ brew bundle
 ```
 
-## Package list
+### Package list
 
 Please choose branch
 
@@ -64,6 +64,8 @@ $ git checkout -b minimal origin/minimal
 ```
 
 ## Install anyenv
+
+### Setup
 
 ```bash
 $ rake anyenv:setup
@@ -82,10 +84,18 @@ done
 
 and do `exec $SHELL -l`
 
-## Install plenv, rbenv, ndenv
+### Install plenv, rbenv, and ndenv
 
 ```bash
 $ rake anyenv:install
+```
+
+`exec $SHELL -l` will be executed automatically.
+
+### Build Perl, Ruby, and Node
+
+```bash
+$ rake anyenv:build
 ```
 
 will be installed 

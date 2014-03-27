@@ -100,8 +100,7 @@ $ rake anyenv:build
 
 will be installed 
 
-- Perl 5.14.4/5.16.3
-  - set 5.14.4 to global
+- Perl 5.14.4
 - Ruby 2.1.0
 - Node.js v0.10.25
 

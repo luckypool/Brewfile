@@ -69,6 +69,19 @@ $ git checkout -b minimal origin/minimal
 $ rake anyenv:setup
 ```
 
+Add to your .bashrc or .zshrc
+
+```
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"
+for D in `ls $HOME/.anyenv/envs`
+do
+    export PATH="$HOME/.anyenv/envs/$D/shims:$PATH"
+done
+```
+
+and do `exec $SHELL -l`
+
 ## Install plenv, rbenv, ndenv
 
 ```bash

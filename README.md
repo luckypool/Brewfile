@@ -51,6 +51,8 @@ $ brew bundle
 
 ### Package list
 
+Detail : [documents/Brewfile.md](documents/Brewfile.md)
+
 Please choose branch
 
 - [master/Brewfile](https://github.com/luckypool/Brewfile/blob/master/Brewfile)

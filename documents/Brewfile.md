@@ -26,7 +26,14 @@ cleanup
 
 #### git
 
-git の version が新しいのを使いたいので homebrew でいれちゃう
+git の version が新しいのを使いたいので homebrew でいれちゃいましょう。
+
+```bash
+$ /usr/bin/git --version
+git version 1.8.5.2 (Apple Git-48)
+$ /usr/local/bin/git --version
+git version 1.9.1
+```
 
 #### hub
 
@@ -60,6 +67,15 @@ screenでも良いかもしれませんが好みで。
 #### zsh, zsh-completions
 
 他のシェルが良いひとならば無理に入れる必要はありません。
+システムのzshよりも新しいのが入ります。
+
+```bash
+$ /bin/zsh --version
+zsh 5.0.2 (x86_64-apple-darwin13.0)
+$ /usr/local/bin/zsh --version
+zsh 5.0.5 (x86_64-apple-darwin13.0.0)
+```
+
 インストールしたら `chsh` しましょう。
 
 - completions まわりの設定
@@ -124,24 +140,28 @@ curl で返ってきたJSONをキレイに表示したい人はこれ使いま�
 
 jdkが入りますよ
 
+- http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html
 - https://github.com/phinze/homebrew-cask/blob/master/Casks/java.rb
 
 #### android-studio
 
-0.5.2 と新しめのが入りますよ
+最近はもうこっちで開発する感じですかね。
 
+- http://developer.android.com/sdk/installing/studio.html
 - https://github.com/phinze/homebrew-cask/blob/master/Casks/android-studio.rb
 
 #### genymotion
 
 こっち使うほうがサクサク動きますからね
 
+- http://www.genymotion.com/
 - https://github.com/phinze/homebrew-cask/blob/master/Casks/genymotion.rb
 
 #### virtualbox
 
 genymotionだったりvagrant使うのには必要です。
 
+- https://www.virtualbox.org/
 - https://github.com/phinze/homebrew-cask/blob/master/Casks/virtualbox.rb
 
 
@@ -149,25 +169,70 @@ genymotionだったりvagrant使うのには必要です。
 
 #### google-chrome
 
+- http://www.google.co.jp/intl/ja/chrome/browser/
 - https://github.com/phinze/homebrew-cask/blob/master/Casks/google-chrome.rb
 
 #### iterm2
 
 Terminal.app使わない人はこれを。
 
+- http://www.iterm2.com/
 - https://github.com/phinze/homebrew-cask/blob/master/Casks/iterm2.rb
 
 #### kobito
 
 スニペットを書くのにはこれで！そして書いたら [Qiita](http://qiita.com/) に投稿しよう！
 
+- http://kobito.qiita.com/ja
 - https://github.com/phinze/homebrew-cask/blob/master/Casks/kobito.rb
 
 #### limechat
 
 無難なIRCクライアント
 
+- http://limechat.net/mac/ja.html
 - https://github.com/phinze/homebrew-cask/blob/master/Casks/limechat.rb
 
-sublime-text
-vagrant
+#### sublime-text
+
+便利なテキストエディタ
+
+- http://www.sublimetext.com/
+- https://github.com/phinze/homebrew-cask/blob/master/Casks/sublime-text.rb
+
+#### vagrant
+
+気軽に環境を up したりできる
+
+- http://www.vagrantup.com/
+- https://github.com/phinze/homebrew-cask/blob/master/Casks/vagrant.rb
+
+### ユーティリティ
+
+#### appcleaner
+
+アンインストーラー
+
+- http://www.freemacsoft.net/appcleaner/
+- https://github.com/phinze/homebrew-cask/blob/master/Casks/appcleaner.rb
+
+#### bettertouchtool
+
+特定のジェスチャーを特定のショートカットキーにできる。便利
+
+- http://blog.boastr.net/downloads-secondbar-bettertouchtool-2/
+- https://github.com/phinze/homebrew-cask/blob/master/Casks/bettertouchtool.rb
+
+#### keyremap4macbook
+
+cmdキーを「かな／カナ」にしたりできる
+
+- https://pqrs.org/macosx/keyremap4macbook/index.html.ja
+- https://github.com/phinze/homebrew-cask/blob/master/Casks/keyremap4macbook.rb
+
+#### xtrafinder
+
+Finderのウィンドウをタブ化してくれたりする
+
+- http://www.trankynam.com/xtrafinder/
+- https://github.com/phinze/homebrew-cask/blob/master/Casks/xtrafinder.rb

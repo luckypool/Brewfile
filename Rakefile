@@ -12,17 +12,17 @@ BREW_UPGRADE_COMMANDS = [
 ]
 
 namespace :brew do
-  desc "Setup homebrew"
+  desc "setup homebrew"
   task :setup do
     exec_and_puts BREW_INSTALL_COMMAND
   end
 
-  desc "Upgrade"
+  desc "upgrade task (update, upgrade, and cleanup)"
   task :upgrade do
     BREW_UPGRADE_COMMANDS.each {|command| exec_and_puts command }
   end
 
-  desc "Bundle"
+  desc "bundle (packages will be installed by Brewfile)"
   task :bundle do
     exec_and_puts"brew bundle"
   end
@@ -96,16 +96,13 @@ EOS
 def exec_and_puts(command)
   puts "=" * 30
   puts "[EXEC] #{command}"
-  puts "=" * 30
   status = Open3.pipeline(command).first
-  puts ""
   unless status.success?
     puts sprintf("#{ERROR_MESSAGE}", command)
     print 'Exit task? [y/N]: '
     answer = STDIN.gets.chomp.strip
     exit 1 if answer == 'y'
   end
-  puts "=" * 30
   puts "[DONE] #{command}"
   puts "=" * 30
 end

@@ -104,3 +104,13 @@ will be installed
 - Ruby 2.1.0
 - Node.js v0.10.25
 
+## Rake tasks
+
+```
+brew:setup      -- setup homebrew
+brew:bundle     -- bundle (packages will be installed by brewfile)
+brew:upgrade    -- upgrade task (update, upgrade, and cleanup)
+anyenv:setup    -- setup anyenv
+anyenv:install  -- install plenv, rbenv, ndenv
+anyenv:build    -- build perl, ruby, node.js
+```

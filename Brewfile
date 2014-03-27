@@ -27,16 +27,10 @@ tap phinze/homebrew-cask || true
 install brew-cask
 
 # android
-cask install android-studio
-cask install genymotion
-cask install virtualbox
 cask install java
-
-# utilities
-cask install appcleaner
-cask install bettertouchtool
-cask install keyremap4macbook
-cask install xtrafinder
+cask install android-studio
+cask install virtualbox
+cask install genymotion
 
 # development tools
 cask install google-chrome
@@ -45,5 +39,11 @@ cask install kobito
 cask install limechat
 cask install sublime-text
 cask install vagrant
+
+# utilities
+cask install appcleaner
+cask install bettertouchtool
+cask install keyremap4macbook
+cask install xtrafinder
 
 cleanup

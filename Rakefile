@@ -5,12 +5,6 @@ BREW_INSTALL_COMMAND = <<"EOS"
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 EOS
 
-BREW_UPGRADE_COMMANDS = [
-  "brew update",
-  "brew upgrade",
-  "brew cleanup"
-]
-
 namespace :brew do
   desc "setup homebrew"
   task :setup do
@@ -19,12 +13,14 @@ namespace :brew do
 
   desc "upgrade task (update, upgrade, and cleanup)"
   task :upgrade do
-    BREW_UPGRADE_COMMANDS.each {|command| exec_and_puts command }
+    %{update upgrade cleanup}.each do |command|
+      exec_and_puts "brew #{command}"
+    end
   end
 
   desc "bundle (packages will be installed by Brewfile)"
   task :bundle do
-    exec_and_puts"brew bundle"
+    exec_and_puts "brew bundle"
   end
 end
 
@@ -41,15 +37,15 @@ EXPORT_PATH_MESSAGE = <<"EOS"
   done
 
   ----
-  and do 'exec $SHELL -l'
+
+  then, do 'exec $SHELL -l'
 
 EOS
 
 ANYENV_INSTALL_COMMANDS = [
   "anyenv install plenv",
   "anyenv install rbenv",
-  "anyenv install ndenv",
-  "exec #{ENV['SHELL']} -l",
+  "anyenv install ndenv"
 ]
 
 ANYENV_BUILD_COMMANDS = [
@@ -79,6 +75,9 @@ namespace :anyenv do
   desc "install plenv, rbenv, ndenv"
   task :install do
     ANYENV_INSTALL_COMMANDS.each {|command| exec_and_puts command }
+    puts ""
+    puts "  do 'exec $SHELL -l'"
+    puts ""
   end
 
   desc "build perl, ruby, node.js"

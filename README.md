@@ -71,7 +71,7 @@ $ git checkout -b minimal origin/minimal
 $ rake anyenv:setup
 ```
 
-Add to your .bashrc or .zshrc
+Then, add to your .bashrc or .zshrc
 
 ```
 export PATH="$HOME/.anyenv/bin:$PATH"

@@ -13,7 +13,7 @@ namespace :brew do
 
   desc "upgrade task (update, upgrade, and cleanup)"
   task :upgrade do
-    %{update upgrade cleanup}.each do |command|
+    %w{update upgrade cleanup}.each do |command|
       exec_and_puts "brew #{command}"
     end
   end

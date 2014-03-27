@@ -1,7 +1,7 @@
 Brewfileの説明
 ==============
 
-[https://github.com/luckypool/Brewfile/blob/master/Brewfile]
+https://github.com/luckypool/Brewfile/blob/master/Brewfile
 
 ## 共通の
 
@@ -20,7 +20,7 @@ cleanup
 
 これはそのままの意味ですが、homebrew の formula の更新とインストール済みパッケージをクリアしてるのに利用されています。
 
-## install
+## brew install
 
 ### GitHubとか使うのに便利なやつ
 
@@ -67,11 +67,6 @@ screenでも良いかもしれませんが好みで。
 - あわせてインストールしたい
   - https://github.com/robbyrussell/oh-my-zsh
 
-
-# for build ruby
-install openssl
-install readline
-
 ### 便利ツール
 
 #### jq
@@ -114,7 +109,7 @@ curl で返ってきたJSONをキレイに表示したい人はこれ使いま�
 
 - http://docs.ruby-lang.org/ja/2.1.0/class/Readline.html
 
-## cask
+## brew cask
 
 [homebrew-cask](https://github.com/phinze/homebrew-cask) でインストールする .dmg とかです
 

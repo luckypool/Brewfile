@@ -1,7 +1,5 @@
-Brewfileの説明
-==============
-
-https://github.com/luckypool/Brewfile/blob/master/Brewfile
+Brewfileのメモ
+=============
 
 ## 共通の
 

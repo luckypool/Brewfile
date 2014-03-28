@@ -15,6 +15,11 @@ Install from App Store
 
 - https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12
 
+Agree License
+
+- run Xcode.app and Agree
+- or do `sudo xcodebuild -license`
+
 Install Command Line Tools
 
 - by CUI (open Terminal.app and do following command)

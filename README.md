@@ -55,7 +55,7 @@ Memo : [documents/Brewfile.md](documents/Brewfile.md)
 
 Please choose Brewfile or edit Brewfile as you like.
 
-- [master/Brewfile](https://github.com/luckypool/Brewfile/blob/master/Brewfiles)
+- [Brewfiles](https://github.com/luckypool/Brewfile/blob/master/Brewfiles)
 
 
 ## Install anyenv

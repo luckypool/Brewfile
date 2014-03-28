@@ -1,0 +1,5 @@
+# android
+cask install java
+cask install android-studio
+cask install virtualbox
+cask install genymotion

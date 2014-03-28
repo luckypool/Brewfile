@@ -1,0 +1,26 @@
+update
+upgrade
+
+# for github
+install git
+install hub
+install tig
+
+# for build ruby
+install openssl
+install readline
+
+tap phinze/homebrew-cask || true
+install brew-cask
+
+# android
+cask install java
+cask install android-studio
+cask install virtualbox
+cask install genymotion
+
+# development tools
+cask install google-chrome
+cask install kobito
+
+cleanup

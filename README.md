@@ -46,24 +46,17 @@ $ rake brew:bundle
 
 # or
 
-$ brew bundle
+$ brew bundle ./Brewfiles/minimal
 ```
 
 ### Package list
 
-Detail : [documents/Brewfile.md](documents/Brewfile.md)
+Memo : [documents/Brewfile.md](documents/Brewfile.md)
 
-Please choose branch
+Please choose Brewfile or edit Brewfile as you like.
 
-- [master/Brewfile](https://github.com/luckypool/Brewfile/blob/master/Brewfile)
-- [minimal/Brewfile](https://github.com/luckypool/Brewfile/blob/minimal/Brewfile)
-- or edit Brewfile as you like.
+- [master/Brewfile](https://github.com/luckypool/Brewfile/blob/master/Brewfiles)
 
-ex.) If you like minimal Brewfile
-
-```
-$ git checkout -b minimal origin/minimal
-```
 
 ## Install anyenv
 
@@ -109,10 +102,12 @@ will be installed
 ## Rake tasks
 
 ```
-brew:setup      -- setup homebrew
-brew:bundle     -- bundle (packages will be installed by brewfile)
-brew:upgrade    -- upgrade task (update, upgrade, and cleanup)
-anyenv:setup    -- setup anyenv
-anyenv:install  -- install plenv, rbenv, ndenv
-anyenv:build    -- build perl, ruby, node.js
+anyenv:setup         -- setup anyenv
+anyenv:install       -- install plenv, rbenv, ndenv
+anyenv:build         -- build perl, ruby, node.js
+brew:setup           -- setup homebrew
+brew:bundle          -- bundle (minimal packages)
+brew:bundle_all      -- bundle (recommended packages)
+brew:bundle_android  -- bundle (only android development packages)
+brew:upgrade         -- upgrade task (update, upgrade, and cleanup)```
 ```

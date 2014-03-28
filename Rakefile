@@ -18,9 +18,19 @@ namespace :brew do
     end
   end
 
-  desc "bundle (packages will be installed by Brewfile)"
+  desc "bundle (minimal packages)"
   task :bundle do
-    exec_and_puts "brew bundle"
+    exec_and_puts "brew bundle ./Brewfiles/minimal"
+  end
+
+  desc "bundle (recommended packages)"
+  task :bundle_all do
+    exec_and_puts "brew bundle ./Brewfiles/all"
+  end
+
+  desc "bundle (only android development packages)"
+  task :bundle_android do
+    exec_and_puts "brew bundle ./Brewfiles/android-development"
   end
 end
 

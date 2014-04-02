@@ -3,6 +3,8 @@ Brewfile
 
 Bacis Brewfile
 
+http://luckypool.github.io/Brewfile/slides
+
 ## Prepare
 
 ### Create Apple ID

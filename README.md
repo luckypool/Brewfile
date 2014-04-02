@@ -82,7 +82,7 @@ do
 done
 ```
 
-and do `exec $SHELL -l`
+then, do `exec $SHELL -l`
 
 ### Install plenv, rbenv, and ndenv
 
@@ -90,7 +90,7 @@ and do `exec $SHELL -l`
 $ rake anyenv:install
 ```
 
-`exec $SHELL -l` will be executed automatically.
+then, do `exec $SHELL -l`
 
 ### Build Perl, Ruby, and Node
 

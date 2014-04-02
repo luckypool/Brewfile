@@ -39,6 +39,7 @@ cask install kobito
 cask install limechat
 cask install sublime-text
 cask install vagrant
+cask install slack
 
 # utilities
 cask install appcleaner

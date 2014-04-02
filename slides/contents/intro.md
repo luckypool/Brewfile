@@ -33,6 +33,10 @@ https://developer.apple.com/register/index.action
 
 run Xcode.app or do `sudo xcodebuild -license`
 
+```
+$ xcode-select --install
+```
+
 --
 
 

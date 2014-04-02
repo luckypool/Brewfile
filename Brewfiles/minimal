@@ -22,5 +22,6 @@ cask install genymotion
 # development tools
 cask install google-chrome
 cask install kobito
+cask install slack
 
 cleanup

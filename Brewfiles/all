@@ -27,6 +27,7 @@ tap phinze/homebrew-cask || true
 install brew-cask
 
 # android
+install android-sdk
 cask install java
 cask install android-studio
 cask install virtualbox

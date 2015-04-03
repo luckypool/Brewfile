@@ -1,27 +1,27 @@
-update
-upgrade
+# update
+# upgrade
 
 # for github
-install git
-install hub
-install tig
+brew 'git'
+brew 'hub'
+brew 'tig'
 
 # for build ruby
-install openssl
-install readline
+brew 'openssl'
+brew 'readline'
 
-tap phinze/homebrew-cask || true
-install brew-cask
+tap 'phinze/homebrew-cask'
+brew 'brew-cask'
 
 # android
-cask install java
-cask install android-studio
-cask install virtualbox
-cask install genymotion
+cask 'java'
+cask 'android-studio'
+cask 'virtualbox'
+cask 'genymotion'
 
 # development tools
-cask install google-chrome
-cask install kobito
-cask install slack
+cask 'google-chrome'
+cask 'kobito'
+cask 'slack'
 
-cleanup
+# cleanup

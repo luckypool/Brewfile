@@ -49,11 +49,7 @@ Then, install homebrew
 ## Install packages by Brewfile
 
 ```bash
-$ rake brew:bundle
-
-# or
-
-$ brew bundle ./Brewfiles/minimal
+$ rake brew:brewdle
 ```
 
 ### Package list
@@ -73,7 +69,7 @@ Please choose Brewfile or edit Brewfile as you like.
 $ rake anyenv:setup
 ```
 
-Then, add to your .bashrc or .zshrc
+Then, add to your .bash_profile or .zshrc
 
 ```
 export PATH="$HOME/.anyenv/bin:$PATH"
@@ -100,7 +96,7 @@ then, do `exec $SHELL -l`
 $ rake anyenv:build
 ```
 
-will be installed 
+will install
 
 - Perl 5.14.4
 - Ruby 2.1.0
@@ -113,8 +109,8 @@ anyenv:setup         -- setup anyenv
 anyenv:install       -- install plenv, rbenv, ndenv
 anyenv:build         -- build perl, ruby, node.js
 brew:setup           -- setup homebrew
-brew:bundle          -- bundle (minimal packages)
-brew:bundle_all      -- bundle (recommended packages)
-brew:bundle_android  -- bundle (only android development packages)
+brew:brewdle         -- brewdle (minimal packages)
+brew:brewdle_all     -- brewdle (recommended packages)
+brew:brewdle_android -- brewdle (only android development packages)
 brew:upgrade         -- upgrade task (update, upgrade, and cleanup)```
 ```

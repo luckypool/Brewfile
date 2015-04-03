@@ -1,6 +1,6 @@
 # android
-install android-sdk
-cask install java
-cask install android-studio
-cask install virtualbox
-cask install genymotion
+brew 'android-sdk'
+cask 'java'
+cask 'android-studio'
+cask 'virtualbox'
+cask 'genymotion'

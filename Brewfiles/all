@@ -1,51 +1,51 @@
-update
-upgrade
+# update
+# upgrade
 
 # for github
-install git
-install hub
-install tig
+install 'git'
+install 'hub'
+install 'tig'
 
 # editor/console
-install tmux
-install vim
-# install emacs
-install zsh
-install zsh-completions
+install 'tmux'
+install 'vim'
+# install 'emacs
+install 'zsh'
+install 'zsh-completions'
 
 # for build ruby
-install openssl
-install readline
+install 'openssl'
+install 'readline'
 
 # utilities
-install jq
-install nkf
-install terminal-notifier
-install tree
+install 'jq'
+install 'nkf'
+install 'terminal-notifier'
+install 'tree'
 
-tap phinze/homebrew-cask || true
-install brew-cask
+tap 'phinze/homebrew-cask'
+install 'brew-cask'
 
 # android
-install android-sdk
-cask install java
-cask install android-studio
-cask install virtualbox
-cask install genymotion
+install 'android-sdk'
+cask 'java'
+cask 'android-studio'
+cask 'virtualbox'
+cask 'genymotion'
 
 # development tools
-cask install google-chrome
-cask install iterm2
-cask install kobito
-cask install limechat
-cask install sublime-text
-cask install vagrant
-cask install slack
+cask 'google-chrome'
+cask 'iterm2'
+cask 'kobito'
+cask 'limechat'
+cask 'sublime-text'
+cask 'vagrant'
+cask 'slack'
 
 # utilities
-cask install appcleaner
-cask install bettertouchtool
-cask install keyremap4macbook
-cask install xtrafinder
+cask 'appcleaner'
+cask 'bettertouchtool'
+cask 'keyremap4macbook'
+cask 'xtrafinder'
 
-cleanup
+# cleanup

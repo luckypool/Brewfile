@@ -9,6 +9,7 @@ namespace :brew do
   desc "setup homebrew"
   task :setup do
     exec_and_puts BREW_INSTALL_COMMAND
+    exec_and_puts "brew tap Homebrew/brewdler"
   end
 
   desc "upgrade task (update, upgrade, and cleanup)"
@@ -18,25 +19,25 @@ namespace :brew do
     end
   end
 
-  desc "bundle (minimal packages)"
-  task :bundle do
-    exec_and_puts "brew bundle ./Brewfiles/minimal"
+  desc "brewdle (minimal packages)"
+  task :brewdle do
+    exec_and_puts "brew brewdle --file=Brewfiles/minimal"
   end
 
-  desc "bundle (recommended packages)"
-  task :bundle_all do
-    exec_and_puts "brew bundle ./Brewfiles/all"
+  desc "brewdle (recommended packages)"
+  task :brewdle_all do
+    exec_and_puts "brew brewdle --file=Brewfiles/all"
   end
 
-  desc "bundle (only android development packages)"
-  task :bundle_android do
-    exec_and_puts "brew bundle ./Brewfiles/android-development"
+  desc "brewdle (only android development packages)"
+  task :brewdle_android do
+    exec_and_puts "brew brewdle --file=Brewfiles/android-development"
   end
 end
 
 EXPORT_PATH_MESSAGE = <<"EOS"
 
-  Add following codes to your .bashrc (or .zshrc)
+  Add following codes to your .bash_profile (or .zshrc)
   -----
 
   export PATH="$HOME/.anyenv/bin:$PATH"

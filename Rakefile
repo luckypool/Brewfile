@@ -2,7 +2,7 @@
 require "open3"
 
 BREW_INSTALL_COMMAND = <<"EOS"
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 EOS
 
 namespace :brew do

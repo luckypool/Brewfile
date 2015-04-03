@@ -9,7 +9,7 @@ namespace :brew do
   desc "setup homebrew"
   task :setup do
     exec_and_puts BREW_INSTALL_COMMAND
-    exec_and_puts "brew tap Homebrew/brewdle"
+    exec_and_puts "brew tap Homebrew/brewdler"
   end
 
   desc "upgrade task (update, upgrade, and cleanup)"

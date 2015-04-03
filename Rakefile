@@ -37,7 +37,7 @@ end
 
 EXPORT_PATH_MESSAGE = <<"EOS"
 
-  Add following codes to your .bashrc (or .zshrc)
+  Add following codes to your .bash_profile (or .zshrc)
   -----
 
   export PATH="$HOME/.anyenv/bin:$PATH"
